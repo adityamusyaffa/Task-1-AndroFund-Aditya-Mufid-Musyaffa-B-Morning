@@ -58,17 +58,9 @@ class PickRoleActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
         when (v.id) {
-            R.id.hipsterContainer -> {
-                this.role = "Hipster"
-            }
-
-            R.id.hustlerContainer -> {
-                this.role = "Hustler"
-            }
-
-            R.id.hackerContainer -> {
-                this.role = "Hacker"
-            }
+            R.id.hipsterContainer -> this.role = "Hipster"
+            R.id.hustlerContainer -> this.role = "Hustler"
+            R.id.hackerContainer -> this.role = "Hacker"
         }
 
         if (v.id == R.id.continueBtn) {
